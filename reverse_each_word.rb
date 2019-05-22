@@ -1,9 +1,10 @@
 def reverse_each_word(string)
-  new_array = string.split(/[\s,']/)
-  final = []
-  new_array.each do |word| final.push(word.reverse)
-  end
-  final.join(" ")
+  original_array = string.split(" ")
+    return_array = []
+    original_array.each do|string|
+      return_array << string.reverse
+    end
+    return_array.join(" ")
 
 end
 #reverse_each_word("hello, my name is bob")
